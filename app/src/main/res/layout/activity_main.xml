@@ -36,4 +36,13 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="297dp"
         android:text="Send Data To Next Activity" />
+
+    <Button
+        android:id="@+id/btnShareToOtherApps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="296dp"
+        android:text="Share to other Apps" />
 </RelativeLayout>
