@@ -9,30 +9,23 @@
 
     <Button
         android:id="@+id/btnShowToast"
-        android:layout_width="168dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/etUserMessage"
-        android:layout_alignStart="@+id/etUserMessage"
-        android:layout_alignTop="@+id/etUserMessage"
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="false"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="false"
-        android:layout_marginStart="126dp"
-        android:layout_marginTop="-70dp"
-        android:layout_marginEnd="126dp"
-        android:layout_marginBottom="22dp"
-        android:text="Show Toast" />
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="27dp"
+        android:text="@string/btn_show_toast" />
 
     <EditText
         android:id="@+id/etUserMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginBottom="359dp"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="255dp"
         android:ems="10"
-        android:hint="Enter your message" />
+        android:hint="@string/et_enter_msg" />
 
     <Button
         android:id="@+id/btnSendMsgToNextActivity"
@@ -40,7 +33,7 @@
         android:layout_height="wrap_content"
         android:layout_above="@+id/etUserMessage"
         android:layout_marginBottom="-125dp"
-        android:text="Send Data To Next Activity" />
+        android:text="@string/btn_move_to_next_activity" />
 
     <Button
         android:id="@+id/btnShareToOtherApps"
@@ -49,7 +42,7 @@
         android:layout_above="@+id/etUserMessage"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="-192dp"
-        android:text="Share to other Apps" />
+        android:text="@string/btn_share_to_apps" />
 
     <Button
         android:id="@+id/btnRecyclerViewDemo"
@@ -59,5 +52,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginStart="147dp"
         android:layout_marginBottom="-258dp"
-        android:text="Recycler View Demo" />
+        android:text="@string/btn_hobbies" />
 </RelativeLayout>

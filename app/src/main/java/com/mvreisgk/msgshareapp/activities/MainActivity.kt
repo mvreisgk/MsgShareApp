@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             // Code
             Log.i(TAG, "Button was clicked!")
-            showToast("Button was clicked!", Toast.LENGTH_LONG)
+            showToast(resources.getString(R.string.btn_was_clicked), Toast.LENGTH_LONG)
         }
 
         val btnSendMsgToNextActivity: Button = findViewById<Button>(R.id.btnSendMsgToNextActivity);
