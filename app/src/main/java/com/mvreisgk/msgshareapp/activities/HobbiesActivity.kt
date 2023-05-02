@@ -9,6 +9,11 @@ import com.mvreisgk.msgshareapp.R
 import com.mvreisgk.msgshareapp.models.Supplier
 
 class HobbiesActivity : AppCompatActivity() {
+
+    companion object {
+        val TAG: String = HobbiesActivity::class.java.simpleName
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hobbies)

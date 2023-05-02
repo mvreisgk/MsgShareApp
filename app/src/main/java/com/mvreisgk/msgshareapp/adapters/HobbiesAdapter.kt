@@ -11,9 +11,15 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.mvreisgk.msgshareapp.models.Hobby
 import com.mvreisgk.msgshareapp.R
+import com.mvreisgk.msgshareapp.activities.SecondActivity
 import com.mvreisgk.msgshareapp.showToast
 
 class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
+
+    companion object {
+        val TAG: String = HobbiesAdapter::class.java.simpleName
+    }
+
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         var currentHobby: Hobby? = null

@@ -7,10 +7,16 @@ import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.mvreisgk.msgshareapp.Constants
 import com.mvreisgk.msgshareapp.R
 import com.mvreisgk.msgshareapp.showToast
 
 class MainActivity : AppCompatActivity() {
+
+    companion object {
+        val TAG: String = MainActivity::class.java.simpleName
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -20,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         val btnShowToast: Button = findViewById<Button>(R.id.btnShowToast);
         btnShowToast.setOnClickListener {
             // Code
-            Log.i("MainActivity", "Button was clicked!")
+            Log.i(TAG, "Button was clicked!")
             showToast("Button was clicked!", Toast.LENGTH_LONG)
         }
 
@@ -28,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         btnSendMsgToNextActivity.setOnClickListener {
             val message: String = etUserMessage.text.toString()
             val intent = Intent(this, SecondActivity::class.java)
-            intent.putExtra("user_message", message)
+            intent.putExtra(Constants.USER_MSG_KEY, message)
             startActivity(intent)
         }
 
