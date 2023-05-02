@@ -6,8 +6,8 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
 import com.mvreisgk.msgshareapp.R
+import com.mvreisgk.msgshareapp.showToast
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             // Code
             Log.i("MainActivity", "Button was clicked!")
-            Toast.makeText(this, "Button was clicked!", Toast.LENGTH_SHORT).show()
+            showToast("Button was clicked!")
         }
 
         val btnSendMsgToNextActivity: Button = findViewById<Button>(R.id.btnSendMsgToNextActivity);
