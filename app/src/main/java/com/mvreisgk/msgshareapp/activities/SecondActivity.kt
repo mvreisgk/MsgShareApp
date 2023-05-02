@@ -14,12 +14,13 @@ class SecondActivity : AppCompatActivity() {
         setContentView(R.layout.activity_second)
 
         val bundle: Bundle? = intent.extras
-        val message = bundle!!.getString("user_message")
 
-        showToast(message!!)
-
-        val txvUserMessage: TextView = findViewById<TextView>(R.id.txvUserMessage)
-        txvUserMessage.text = message
+        bundle?.let{
+            val message = bundle.getString("user_message")
+            showToast(message!!)
+            val txvUserMessage: TextView = findViewById<TextView>(R.id.txvUserMessage)
+            txvUserMessage.text = message
+        }
     }
 
 }
