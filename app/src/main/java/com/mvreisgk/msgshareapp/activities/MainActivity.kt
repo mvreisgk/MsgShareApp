@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
+import android.widget.Toast
 import com.mvreisgk.msgshareapp.R
 import com.mvreisgk.msgshareapp.showToast
 
@@ -20,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         btnShowToast.setOnClickListener {
             // Code
             Log.i("MainActivity", "Button was clicked!")
-            showToast("Button was clicked!")
+            showToast("Button was clicked!", Toast.LENGTH_LONG)
         }
 
         val btnSendMsgToNextActivity: Button = findViewById<Button>(R.id.btnSendMsgToNextActivity);
