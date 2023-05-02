@@ -1,4 +1,4 @@
-package com.mvreisgk.msgshareapp
+package com.mvreisgk.msgshareapp.adapters
 
 import android.content.Context
 import android.content.Intent
@@ -9,8 +9,10 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.mvreisgk.msgshareapp.models.Hobby
+import com.mvreisgk.msgshareapp.R
 
-class HobbiesAdapter(val context: Context, val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
+class HobbiesAdapter(val context: Context, private val hobbies: List<Hobby>) : RecyclerView.Adapter<HobbiesAdapter.MyViewHolder>() {
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
 
         var currentHobby: Hobby? = null
